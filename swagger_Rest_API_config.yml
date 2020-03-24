@@ -1,0 +1,14 @@
+summary: Upload a file.
+operationId: postFile
+consumes:
+  - multipart/form-data
+produces:
+  - application/json
+parameters:
+  - in: formData
+    name: file # change it to your parameter name
+    description: "Accepts a input file"
+    required: true
+    type: file
+    description: The file to upload
+  # other optional form parameters, e.g. ...
